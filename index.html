@@ -34,18 +34,48 @@
             padding: 3em;
             width: 50%;
         }
-        .container:hover .two{
+
+        .container:hover .two {
             transition: transform 1s linear;
-            transform: translate(1em,1em);
+            transform: translate(1em, 1em);
         }
-        .one{
+
+        .one {
             border-radius: 2em;
             opacity: .3;
         }
-        .two{
+
+        .two {
             border-radius: 2em;
             position: absolute;
             left: 3em;
+        }
+
+        /* three image transformation style */
+        .main {
+            margin: 4em;
+        }
+
+        .main ul {
+            list-style: none;
+            display: flex;
+            gap: 1em;
+        }
+
+        ul li img {
+            width: 20em;
+            height: 15em;
+            border-radius: 2em;
+        }
+
+        .first:hover,
+        .third:hover {
+            transform: scale(1.5) rotate(2deg);
+            transition: transform 1s linear;
+        }
+        .second:hover{
+            transform: scale(1.5) rotate(-2deg);
+            transition: transform 1s linear;
         }
     </style>
 </head>
@@ -65,6 +95,16 @@
         <img class="two" src="blogimg1.jpg" alt="">
     </div>
 
+    <div class="main">
+        <ul>
+            <li> <img class="first" src="blogimg1.jpg" alt="">
+            </li>
+            <li> <img class="second" src="blogimg3.jpg" alt="">
+            </li>
+            <li> <img class="third" src="mamai-2.png" alt="">
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
